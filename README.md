@@ -1,3 +1,1 @@
 # Biju-shop
-
-Em andamento...
