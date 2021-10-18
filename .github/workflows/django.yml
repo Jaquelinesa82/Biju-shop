@@ -26,12 +26,9 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
-
     - name: Test with pytest
-        run: |
-          pipenv run pytest --cov=myshop
+      run: |
+        pipenv run pytest --cov=myshop
         
-    - name: Test with pytest
-        run: |
-          pipenv run pytest --cov=myshop
+
 
