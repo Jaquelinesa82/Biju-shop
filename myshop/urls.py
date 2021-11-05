@@ -20,10 +20,12 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myshop.base.urls')),
+    path('shop/', include('myshop.shop.urls', namespace='shop')),
 ]
 
 if settings.DEBUG:
     import debug_toolbar
+
     urlpatterns.append(
         path('__debug__/', include(debug_toolbar.urls))
     )
